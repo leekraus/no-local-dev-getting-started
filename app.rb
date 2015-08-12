@@ -6,7 +6,7 @@ require './environments'
 
 
 class JobNumber < ActiveRecord::Base
-  self.table_name = 'salesforce.job_number__c'
+  self.table_name = 'salesforce.Job_number__c'
 end
 
 get "/jobnumbers" do
