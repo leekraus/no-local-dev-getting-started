@@ -10,7 +10,7 @@ class JobNumber < ActiveRecord::Base
 end
 
 get "/jobnumbers" do
-  @JobNumber = Job_Number__c.all
+  @JobNumbers = Job_Number__c.all
   erb :index
 end
 
