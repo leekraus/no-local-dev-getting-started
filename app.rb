@@ -6,11 +6,11 @@ require './environments'
 
 
 class JobNumber < ActiveRecord::Base
-  self.table_name = 'salesforce.Job_number__c'
+  self.table_name = 'salesforce.Job_Number__c'
 end
 
 get "/jobnumbers" do
-  @contacts = Job_number__c.all
+  @JobNumber = Job_Number__c.all
   erb :index
 end
 
