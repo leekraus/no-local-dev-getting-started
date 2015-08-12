@@ -5,17 +5,13 @@ require 'sinatra/activerecord'
 require './environments'
 
 
-class JobNumber < ActiveRecord::Base
-  self.table_name = 'salesforce.Job_Number__c'
+class Contact < ActiveRecord::Base
+  self.table_name = 'salesforce.contact'
 end
 
-get "/jobnumbers" do
-  @JobNumbers = Job_Number__c.all
+get "/contacts" do
+  @contacts = Contact.all
   erb :index
-end
-
-get "/" do
-  erb :home
 end
 
 
