@@ -14,10 +14,10 @@ class Contact < ActiveRecord::Base
   self.table_name = 'salesforce.Contact'
 end
 
-#get "/contacts" do
-#  @contacts = Contact.all
-#  erb :index
-#end
+get "/contacts" do
+ @contacts = Contact.all
+ erb :index
+end
 
 get "/create" do
   CREATE_URL = 'https://connect.heroku.com/dashboard-next/create-connection'
