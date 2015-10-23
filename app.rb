@@ -28,6 +28,11 @@ get "/job-numbers" do
   erb :job_index
 end
 
+get "/job-numbers/new" do
+  @jobnumber = JobNumber.new
+  erb :job_new
+end
+
 get "/create" do
   CREATE_URL = 'https://connect.heroku.com/dashboard-next/create-connection'
   match = /(.*?)\.herokuapp\.com/.match(request.host)
