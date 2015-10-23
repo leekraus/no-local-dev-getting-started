@@ -11,7 +11,11 @@ end
 
 
 class Contact < ActiveRecord::Base
-  self.table_name = 'salesforce.contact'
+  self.table_name = 'salesforce.Contact'
+end
+
+class JobNumber < ActiveRecord::Base
+  self.table_name = 'salesforce.Job_Number__c'
 end
 
 get "/contacts" do
