@@ -23,6 +23,11 @@ get "/contacts" do
  erb :index
 end
 
+get "/job-numbers" do
+  @jobnumbers = JobNumbers.all
+  erb :jobs_index
+end
+
 get "/create" do
   CREATE_URL = 'https://connect.heroku.com/dashboard-next/create-connection'
   match = /(.*?)\.herokuapp\.com/.match(request.host)
