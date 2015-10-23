@@ -24,7 +24,7 @@ get "/contacts" do
 end
 
 get "/job-numbers" do
-  @jobnumbers = JobNumbers.all
+  @jobnumbers = JobNumber.all
   erb :jobs_index
 end
 
