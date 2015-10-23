@@ -1,1 +1,17 @@
-jobnumbers
+
+
+<div class="container">
+
+  <table>
+    <tr>
+      <th>Name</th>
+    </tr>
+
+    <% @jobnumbers.each do |jobnumber| %>
+      <tr>
+        <td><%= jobnumber.name %></td>
+      </tr>
+    <% end %>
+  </table>
+
+</div>
