@@ -33,6 +33,12 @@ get "/job-numbers/new" do
   erb :job_new
 end
 
+post "/job-numbers" do
+  @jobnumber = JobNumber.new(params[:job_number])
+  @jobnumber.save
+  redirect to("/job-numbers")
+end
+
 get "/create" do
   CREATE_URL = 'https://connect.heroku.com/dashboard-next/create-connection'
   match = /(.*?)\.herokuapp\.com/.match(request.host)
