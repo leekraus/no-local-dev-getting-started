@@ -4,12 +4,12 @@
 
   <table>
     <tr>
-      <th>Name</th>
+      <th>Site</th>
     </tr>
 
     <% @jobnumbers.each do |jobnumber| %>
       <tr>
-        <td><%= jobnumber.name %></td>
+        <td><%= jobnumber.site__c %></td>
       </tr>
     <% end %>
   </table>
