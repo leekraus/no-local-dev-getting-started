@@ -25,7 +25,7 @@ end
 
 get "/job-numbers" do
   @jobnumbers = JobNumber.all
-  erb :jobs_index
+  erb :job_index
 end
 
 get "/create" do
