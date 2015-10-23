@@ -23,10 +23,10 @@ get "/contacts" do
  erb :index
 end
 
-get "/job-numbers" do
-  @jobnumbers = JobNumber.all
-  erb :job_index
-end
+#get "/job-numbers" do
+#  @jobnumbers = JobNumber.all
+#  erb :job_index
+#end
 
 get "/create" do
   CREATE_URL = 'https://connect.heroku.com/dashboard-next/create-connection'
