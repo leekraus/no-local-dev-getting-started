@@ -14,9 +14,9 @@ class Contact < ActiveRecord::Base
   self.table_name = 'salesforce.contact'
 end
 
-#class JobNumber < ActiveRecord::Base
- # self.table_name = 'salesforce.Job_Number__c'
-#end
+class JobNumber < ActiveRecord::Base
+  self.table_name = 'salesforce.job_number__c'
+end
 
 get "/contacts" do
  @contacts = Contact.all
